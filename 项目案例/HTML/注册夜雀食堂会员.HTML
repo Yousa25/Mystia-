@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form>
+        <h1>欢迎来到夜雀食堂</h1>
+        <img src="../images/200px-米斯蒂娅·萝蕾拉（求闻史纪）.jpg">
+        <br>
+
+        <!--text 文本框 用户可以输入任何文字-->
+        <label for="uasername">昵称：</label>
+        <input type="text" name="uasername" id="uasername" />
+        <br />
+        <!--password 密码框 用户看不见输入的密码-->
+        <label for="password">密码：</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <label for="住址">住址</label>
+        <select name="住址" id="住址">
+            <option selected="selected">选择住址</option>
+            <option value="妖怪兽道">妖怪兽道</option>
+            <option value="人间之里">人间之里</option>
+            <option value="博丽神社">博丽神社</option>
+            <option value="红魔馆">红魔馆</option>
+            <option value="迷途竹林">迷途竹林</option>
+            <option value="魔法森林">魔法森林</option>
+            <option value="妖怪之山">妖怪之山</option>
+        </select>
+        <br>
+
+
+        <!--单选按钮和复选框可以设置checked属性，当页面打开的时候就可以默认选中-->
+        <!--单选框 用name属性标注为同一类-->
+        酒水喜好：
+        <input type="radio" name="酒精" id="高酒精">
+        <label for="高酒精">高酒精</label>
+        <input type="radio" name="酒精" id="中酒精">
+        <label for="中酒精">中酒精</label>
+        <input type="radio" name="酒精" id="低酒精">
+        <label for="低酒精">低酒精</label>
+        <input type="radio" name="酒精" checked="checked" value="无酒精" id="无酒精">
+        <label for="无酒精">无酒精</label>
+        <br>
+        <!--多选框 用name属性标注为同一类-->
+        <label for="厌恶" name="厌恶">厌恶：</label>
+        <input type="checkbox" name="厌恶" id="猎奇">
+        <label for="猎奇">猎奇</label>
+        <input type="checkbox" name="厌恶" id="灼热" checked="checked" value="灼热">
+        <label for="灼热">灼热</label>
+        <input type="checkbox" name="厌恶" id="大份">大份
+        <label for="大份"></label>
+        <input type="checkbox" name="厌恶" id="大份">昂贵
+        <label for="昂贵"></label>
+        <br>
+        <input type="submit" value="免费注册" name="注册">
+        <!--点击提交按钮，可以把表单域form里面的表单元素里面的值提交给
+        后台服务器-->
+        <input type="reset" value="重填" name="重填">
+        <br>
+        <!--普通按钮 后期结合js使用-->
+        <input type="button" value="来一杯十四夜">
+        <br>
+        <!--文件域，使用场景，上传文件时使用-->
+        你有新菜品吗？上传菜谱给我！<input type="file" value="新菜品">
+
+        <br>
+
+        <label for="文本域">留言板：</label>
+        <textarea name="文本域" id="文本域" rows="10" cols="60">
+            不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！
+            不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！
+            不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！
+            不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！不许拔我羽毛！
+        </textarea>
+    </form>
+</body>
+
+</html>
